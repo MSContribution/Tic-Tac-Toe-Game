@@ -30,6 +30,8 @@ public class TicTacGame {
                     System.out.println("Congrats! you won");
                     return;
                 }
+                if(turn >= 9)
+                break;
                 System.out.println("CPU turn");
                 t = 'C';
                 Random r = new Random();
@@ -46,6 +48,7 @@ public class TicTacGame {
                     return;
                 }
                 t = 'P';
+                turn++;
             }
             System.out.println("Draw!");
         }
@@ -67,6 +70,8 @@ public class TicTacGame {
                     System.out.println("Player 1 Won!");
                     return;
                 }
+                if(turn >= 9)
+                break;
                 System.out.println("player 2 turn player 2 Enter your position");
                 t = 'C';
                 //Random r = new Random();
@@ -84,6 +89,7 @@ public class TicTacGame {
                     return;
                 }
                 t = 'P';
+                turn++;
             }
             System.out.println("Draw!");
         }
